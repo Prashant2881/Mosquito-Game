@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(117, 115, 115), rgba(2, 69, 131, 0.993));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#game-container {
+    text-align: center;
+    position: relative;
+}
+
+#score-board, #timer {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#mosquito-area {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #cce7ff;
+    border: 2px solid #007acc;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.mosquito {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    cursor: pointer;
+    background-image: url("mosq.png");
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    background-color: #0011ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+#restart-btn:hover {
+    background-color:rgba(0, 0, 0, 0);
+    opacity: 0.5;
+      
+}
+
+#game-over {
+    font-size: 24px;
+    margin-top: 20px;
+}

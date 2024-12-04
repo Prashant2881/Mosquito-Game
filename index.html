@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosquito Killer Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-board">
+            <span>Score: </span><span id="score">0</span>
+        </div>
+        <div id="timer">Time: <span id="time-left">60</span>s</div>
+        <div id="mosquito-area">
+            
+        </div>
+        <button id="restart-btn" onclick="startGame()">Restart</button>
+        <div id="game-over" class="hidden">
+            <p>Game Over!</p>
+            <p>Your Score: <span id="final-score"></span></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
